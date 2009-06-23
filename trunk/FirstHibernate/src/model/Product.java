@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "FH_PRODUCT")
 public class Product {
-	private Integer id;
+	private Long id;
 	private String title;
 	private Double price;
 	/*
@@ -37,11 +37,11 @@ public class Product {
 
 	@Id
 	@GeneratedValue
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

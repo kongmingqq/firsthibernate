@@ -17,7 +17,7 @@ import javax.persistence.TemporalType;
 @Entity
 @Table(name = "FH_ORDER")
 public class Order {
-	private Integer id;
+	private Long id;
 	private User user;
 	private Date orderTime;
 	private List<Product> products;
@@ -37,11 +37,11 @@ public class Order {
 
 	@Id
 	@GeneratedValue
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	
