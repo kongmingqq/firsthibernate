@@ -11,7 +11,7 @@
         <property name="connection.driver_class">org.gjt.mm.mysql.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/firsthibernate</property>
         <property name="connection.username">root</property>
-        <property name="connection.password"></property>
+        <property name="connection.password">root</property>
 
         <!-- JDBC connection pool (use the built-in) -->
         <property name="connection.pool_size">1</property>
@@ -27,9 +27,6 @@
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
-
-        <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">create</property>
 
     </session-factory>
 

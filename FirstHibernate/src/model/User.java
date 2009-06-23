@@ -9,16 +9,16 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "FH_USER")
 public class User {
-	private Integer id;
+	private Long id;
 	private String name;
 
 	@Id
 	@GeneratedValue
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

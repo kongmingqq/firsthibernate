@@ -1,3 +1,4 @@
+package util;
 import model.*;
 
 import org.hibernate.Session;
