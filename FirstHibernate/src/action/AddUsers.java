@@ -3,7 +3,7 @@ package action;
 import org.hibernate.HibernateException;
 
 import dao.UserDao;
-import dao.UserDaoImpl;
+import dao.HibernateUserDao;
 import util.HibernateUtil;
 import util.UserInterfaceUtil;
 import model.User;
@@ -19,7 +19,7 @@ public class AddUsers extends Action {
 			user.setName(name);
 			try {
 				HibernateUtil.beginTransaction();
-				UserDao userDao = new UserDaoImpl();
+				UserDao userDao = new HibernateUserDao();
 				userDao.create(user);
 				HibernateUtil.commitTransaction();
 			} catch(HibernateException e) {
