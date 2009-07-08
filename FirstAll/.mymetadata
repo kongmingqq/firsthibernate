@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="FirstAll"
+  id="myeclipse.1246895760451"
+  context-root="/FirstAll"
+  j2ee-spec="5.0"
+  archive="FirstAll.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
